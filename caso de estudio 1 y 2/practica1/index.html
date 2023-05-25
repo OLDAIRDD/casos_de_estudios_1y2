@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro de usuarios para una conferencia</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Registro de asistentes.</h1>
+  <center>
+    <h2 >Completa el formulario:</h2>
+  </center>
+  <form>
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required minlength="4" pattern="[a-zA-A ]+">
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" placeholder="maquinadefuego@gmail.com" required>
+    
+    <label for="Numerotel">Numero de telefono:</label>
+    <input type="text" id="Numerotel" placeholder="7712829104" required minlength="10" maxlength="10"><br>
+
+    <label for="Fechan">Fecha de nacimiento:</label>
+    <input type="date" required><br>
+    
+    <label for="Sexo">Sexo:</label>      
+    <label for="Masculino">Masculino</label>
+    <input type="radio" value=""><br>
+    <label for="Femenino">Femenino</label>
+    <input type="radio" value=""><br>
+    <label for="binarie">binarie</label>
+    <input type="radio" value=""><br>
+
+    <label for="ocupacion">Ocupación:</label>
+    <select name="Ocupacion" id="ocupacion">
+      <option value="a">Ingeniero</option>
+      <option value="b">Doctor</option>
+      <option value="c">Licenciado</option>
+      <option value="d">Maestro</option>
+      <option value="e">NINI</option>
+    </select>
+
+    <label for="talla">Talla de camiseta:</label>
+    
+    <input type="button" value="S">
+    <input type="button" value="M">
+    <input type="button" value="L">
+    <input type="button" value="XL">
+    
+
+    <label for="preferencias">Preferencias dietéticas:</label>
+    <label for="Vegetariano">Vegetariano</label>
+    <input type="checkbox" value="">
+    <label for="Vegano">Vegano</label>
+    <input type="checkbox" value="">
+    <label for="Sin gluten">Sin gluten</label>
+    <input type="checkbox" value="">
+    <label for="Sin reestricciones">Sin reestricciones</label>
+    <input type="checkbox" value=""><br>
+    
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
